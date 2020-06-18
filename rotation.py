@@ -192,12 +192,14 @@ def rotation_matrix_zaxis(theta):
 
 
 def norm_difference(p1, p2):
+    """Returns the norm of the difference vector between p1 and p2"""
     p = p2 - p1
     return p/np.sqrt(p.dot(p))
 
 
 def transformation_operation(T):
-    """Generate a transformation function from a quaterion matrix
+    """Generate a transformation function from a quaternion matrix
+
     Parameters
     ----------
     T: np.array((4,4))
